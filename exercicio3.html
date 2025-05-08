@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 3</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f5f5f5;
+      font-family: sans-serif;
+    }
+
+    .quadro {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      background: white;
+    }
+
+    .caixa-vermelha {
+      position: absolute;
+      left: 20px;
+      top: 40px;
+      width: 300px;
+      height: 650px;
+      background: #b22222;
+    }
+
+    .caixa-vermelha .topo{
+        height: 20px;
+        position: absolute;
+        left: 10px;
+        right: 10px;
+    }
+    .caixa-vermelha .base {
+      height: 20px;
+      position: absolute;
+      left: 10px;
+      right: 10px;
+    }
+
+    .caixa-vermelha .topo {
+      top: 20px;
+      background: limegreen;
+      height: 50px;
+      width: 250px;
+      animation-name: girar;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    .caixa-vermelha .base {
+      bottom: 20px;
+      background: #200;
+      height: 50px;
+      width: 250px;
+      animation-name: girar;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    .caixa-verde {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      width: 600px;
+      height: 100px;
+      background: seagreen;
+    }
+
+    .caixa-verde .interna {
+        width: 300px;
+      height: 75px;
+      background: #200;
+      position: absolute;
+      top: 25px;
+      left: 300px;
+      right: 0px;
+      animation-name: girar;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    .caixa-azul {
+      position: absolute;
+      bottom: 20px;
+      right: 40px;
+      width: 350px;
+      height: 350px;
+      background: blue;
+    }
+
+    .caixa-azul .interna {
+      width: 300px;
+      height: 75px;
+      background: #200;
+      position: absolute;
+      top: 5px;
+      left: 0px;
+      right: 50px;
+      animation-name: girar;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+
+    @keyframes girar {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+
+      }
+  </style>
+</head>
+<body>
+
+  <div class="quadro">
+    <div class="caixa-vermelha">
+      <div class="topo"></div>
+      <div class="base"></div>
+    </div>
+
+    <div class="caixa-verde">
+      <div class="interna"></div>
+    </div>
+
+    <div class="caixa-azul">
+      <div class="interna"></div>
+    </div>
+  </div>
+
+</body>
+</html>

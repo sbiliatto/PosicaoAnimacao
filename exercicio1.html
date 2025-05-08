@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 1</title>
+  <link rel="stylesheet" href="static/css/estilo.css">
+</head>
+
+
+<body>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        .vermelho {
+        width: 770px;
+        height: 377px;
+        background-color: red;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation-name: piscapisca1;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        }
+
+        .azul {
+        width: 770px;
+        height: 377px;
+        background-color: blue;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        animation-name: piscapisca2;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        }
+
+        @keyframes piscapisca1 {
+            0% {
+                background-color: blue;
+            }
+            100% {
+                background-color: red;
+            }
+        }
+
+        @keyframes piscapisca2 {
+            0% {
+                background-color: red;
+            }
+            100% {
+                background-color: blue;
+            }
+        }
+
+
+
+    </style>
+
+
+  <div class="vermelho"></div>
+  <div class="azul"></div>
+</body>
+</html>

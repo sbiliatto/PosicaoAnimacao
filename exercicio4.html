@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 4</title>
+  <style>
+        body {
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .quadro {
+            width: 900vh;
+            height: 700px;
+            background-color: white;
+            border: #230000 solid 30px;
+            position:relative;
+        }
+        
+        .centro-vermelho {
+            background-color: red;
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .centro-verde {
+            background-color: aquamarine;
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .quadrado-giratorio {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: girar 4s infinite linear;
+        }
+        
+        .bolinha {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: absolute;
+        }
+        
+        .rosa {
+            background-color: pink;
+            top: 0;
+            left: 0;
+            transform: translate(-50%, -50%);
+        }
+        
+        .azul {
+            background-color: lightblue;
+            top: 0;
+            right: 0;
+            transform: translate(50%, -50%);
+        }
+        
+        .amarela {
+            background-color: rgb(255, 255, 0);
+            bottom: 0;
+            left: 0;
+            transform: translate(-50%, 50%);
+        }
+        
+        .preta {
+            background-color: #230000;
+            bottom: 0;
+            right: 0;
+            transform: translate(50%, 50%);
+        }
+
+        .centro {
+            background-color: blue;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+  
+        
+        @keyframes girar {
+            0% {
+                transform: translate(-50%, -50%) rotate(0turn);
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(1turn);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+  <div class="quadro">
+    <div class="centro-vermelho">
+      <div class="centro-verde"></div>
+      <div class="quadrado-giratorio">
+        <div class="bolinha rosa"></div>
+        <div class="bolinha azul"></div>
+        <div class="bolinha amarela"></div>
+        <div class="bolinha preta"></div>
+        <div class="bolinha centro"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

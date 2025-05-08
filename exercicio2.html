@@ -1,0 +1,75 @@
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercício 2</title>
+  <link rel="stylesheet" href="static/css/estilo.css">
+</head>
+
+
+<body>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            position: relative;
+        }
+        
+        .barra-topo {
+            background-color: #1a237e;
+            height: 60px;
+            position: relative;
+        }
+        
+        .caixa-central {
+            width: 100px;
+            height: 30px;
+            background-color: aquamarine;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: rolar 0.5s infinite;
+            animation-name: rolar;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+
+        }
+        
+        .bola-fixa {
+            width: 60px;
+            height: 60px;
+            background-color: red;
+            border-radius: 50%;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .tela{
+            width: 100vw;
+            height: 200vh;
+            position: relative;
+
+        }
+
+
+        @keyframes rolar {
+            0% {top: 0%;
+        }
+            50% {
+                top: 50%;
+            }
+            100% { top: 100%;
+            }
+        }
+    </style>
+
+
+  <div class="barra-topo">
+    <div class="caixa-central"></div>
+  </div>
+  <div class="bola-fixa"></div>
+  <div class="tela"></div>
+  <div class= "animacao"></div>
+</body>
+</html>
